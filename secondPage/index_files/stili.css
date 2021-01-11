@@ -1,0 +1,396 @@
+body {margin: 0px;padding: 0px;}
+
+.buttonup {position:fixed;bottom:40px;left:0px;z-index: 999999;}
+
+.glavniyblok {width:100%;margin: 0px;padding: 0px;vertical-align:top; border: 0px;border-collapse: collapse;}
+
+h1, h2, h3, h4, h5, h6, p, div, td, b, i {font-family: Arial, sans-serif, Tahoma;}
+tr, td {margin: 0px; padding: 0px;}
+textarea {resize: none; width:200px; height:64px;}
+
+.levayakolonka {padding: 0px;width:22%; border-right: 1px solid #c8d2e6;margin-left: 2%;vertical-align:top;position: fixed;overflow-y: scroll; height: 100%;}
+/* хром, сафари */
+.levayakolonka::-webkit-scrollbar { width: 0; background: transparent;}
+/* ie 10+ */
+.levayakolonka { -ms-overflow-style: none; }
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.levayakolonka { overflow: -moz-scrollbars-none; scrollbar-width: none;}
+
+
+/*Новые стили 01.12.20*/
+p.cities {padding: 2px 0; margin: 0; display: flex; align-items: center;}
+p.cities span {width: 50%;}
+p.cities span:first-child {text-align: right; padding: 0 10px 0 0; box-sizing: border-box;}
+p.cities span:last-child {text-align: left;}
+p.cities a.btn {margin-left: 50%; border: 1px solid #3399FF; color: inherit; text-decoration: none; padding: 1px 5px; display: table; }
+p.cities.bs {padding: 5px 0; margin: 0;}
+p.cities.bs span:last-child {font-size: 18px; font-weight:bold;}
+td.verhniyblokosobenniy.right-td {text-align:center; width: 50%; padding-left: 100px;}
+.verhpochta a {color: inherit; text-decoration: none;}
+/*Конец стилей 01.12.20*/
+
+.levayakolonka a {margin: 0px;padding: 0px; text-decoration: none; color: #333;}
+.levayakolonkavnutri {width:100%;border:0px;}
+.levayakolonkavnutri td {padding: 15px 0px 0px 0px;}
+.levayakolonkavnutri2 {width:100%;border: 0px;}
+.menusamo {background-color: #e9edf5;}
+.abzacimenu {font-size: 15px;width: inherit;height: 100%;margin: 0px;padding: 8px 8px 8px 12px;color: #1569dF;border-bottom: 1px solid #dde1ef;}
+.abzacimenu:hover {background-color: #ffffff; border-left: 4px solid #dde1ef; padding-left: 8px;}
+.zagolovokmenu {background-color: #b4c7e7;width: inherit;height: 100%;font-size: 15px;margin: 0px; padding: 10px 15px; color: #242424;}
+
+.pravayakolonka {background-color: white;vertical-align:top;margin-left: 24%;}
+.verhniyblok {width:100%;color:white !important;background-color:#373d44;text-align:left;font-size:13px;border:0px;}
+
+/*Обновленные стили 01.12.20*/
+.verhniyblokosobenniy {text-align: right; padding: 4px 10px 4px 0px;}
+/*Конец стилей 01.12.20*/
+
+.verhpochta {color: #3399FF; background-color: #474d54; padding: 5px 9px 5px 9px;font-weight: bold;}
+.ssilkabezstilya {color: inherit; text-decoration: none;}
+.ssilkabezstilya:visited {color: inherit;}
+.telefon {font-size: 18px; margin-right: 10px; font-weight: bold;white-space: nowrap;}
+.verhniyblokniz {text-align: center; padding: 10px 5px 7px 5px; background-color: #474d54;}
+.verhniyblokniz p {font-size: 16px;font-weight: bold;margin:0px;}
+
+.seredina {padding: 15px 40px 15px 40px; font-size: 16px;text-align:justify;font-family: Arial; line-height: 24px; color: #333;}
+.seredina h1 {font-size: 31px; text-align: left; line-height: 43px !important; font-weight: normal;}
+.seredina h2 {font-size: 26px; text-align: center; line-height: 33px !important; font-weight: normal; padding-top: 12px; padding-bottom: 12px; background: #e9edf5;}
+.bezogranicheniy {max-width: none !important;}
+.seredina a {color: #1569dF;}
+.seredina a:visited {color: #1569dF}
+.seredina a:hover {color: #333;}
+
+.liniya {background: #c8d2e6; height: 1px; border: 0;}
+.sobramleniem {border: 1px solid #c8d2e6;}
+
+.kartinkaobraschenie {vertical-align:top;}
+.obraschenie {font-size: 16px; padding-left: 25px; vertical-align:top;
+padding-right: 15px; text-align: justify; font-family: Arial; line-height: 22px;}
+
+.vtekste {float: right; padding-left: 30px;}
+.vteksteleft {float: left; padding-right: 30px;}
+.vnutrenniessilki {text-align: left;font-size: 15px;line-height: 15px;border-top: 1px solid #c8d2e6;border-bottom: 1px solid #c8d2e6;}
+.vnutrenniessilki a {text-decoration: none;}
+
+.blokblokov {font-size: 15px;border-spacing: 0px;vertical-align:top;border: 0px;}
+.divnavsu {width:100%;height:100%;padding: 0px 10px 10px 10px;margin:0px; box-sizing: border-box;}
+.blokblokov a {text-decoration: none;color: black;}
+.blokblokov a:visited {text-decoration: none;color: black;}
+.blokblokovvalue {width:48%; text-align: center; border: 1px solid #c8d2e6;vertical-align:top;padding:0px;}
+.blokblokovvalue h3 {padding: 18px 8px 12px 8px;margin:0px; color:#1569dF; text-decoration: underline;}
+.blokblokovvalue img {padding: 0px 8px 0px 8px;margin:0px;min-width:350px;}
+.blokblokovvalue p {padding: 10px 8px 12px 8px;margin:0px;}
+.blokblokovvalue:hover {background-color: #c8d2e6;}
+.blokblokovpusto {width:4%; text-align: center; border: 0px;padding:0px;margin:0px;}
+.blokblokovstroka {height:12px;padding:0px;margin:0px;border: none;}
+
+.galereyamini {font-size: 15px;border-spacing: 0px;vertical-align:top;border: 0px;border-collapse: collapse;}
+.galereyaminitd {width:33%; text-align: center; border: 1px solid #c8d2e6;vertical-align:center;padding:0px;border-collapse: collapse; padding: 10px;}
+.galereyamini th {background: #e9edf5; width:33%; text-align: center; border: 1px solid #c8d2e6;vertical-align:center;padding:0px;border-collapse: collapse; font-size: 18px; padding: 7px;}
+.galereyaminitd h3 {padding: 18px 8px 12px 8px;margin:0px;}
+.galereyaminitd img {padding: 0px 8px 0px 8px;margin:0px;min-width:350px;}
+.galereyaminitd p {padding: 10px 8px 12px 8px;margin:0px;}
+
+.MsoTableGrid {font-size: 15px;border-spacing: 0px;border-collapse: collapse;}
+.MsoTableGrid th {background-color: #e9edf5; padding:7px 12px; border: 1px solid #c8d2e6;text-align: center;min-width:180px;}
+.MsoTableGrid td {border: 1px solid #c8d2e6; padding:7px 12px;text-align: left;min-width:180px;vertical-align:top; line-height: 18px;}
+.pocentru {text-align: center !important;}
+.krasniy {background-color: #ffe0e6;text-align: center !important;}
+.zeleniy {background-color: #eafff4;text-align: center !important;}
+
+.tablicaoprosniy {font-size: 15px;border-spacing: 0px;border-collapse: collapse;border-left:10px solid #c8d2e6;}
+.tablicaoprosniy th {background-color: #e9edf5; padding:12px 8px; border: 1px solid #c8d2e6;text-align: left;min-width:120px;}
+.tablicaoprosniy td {border: 1px solid #c8d2e6; padding:12px 8px;text-align: left;min-width:120px;}
+
+.prikrepitkp {font-size: 16px; border-spacing: 0px; border-collapse: collapse; border: 0px;padding: 0px; margin: 0px;}
+.tdskartinkoj {line-height: 0px;}
+.prikrepitkp td {background-color: #e9edf5; border: 0px; padding: 0px; text-align: left; margin: 0px;vertical-align:center;}
+.tdsotstupom {padding: 25px !important;}
+.prikrepitkp td img {padding: 0px !important; margin: 0px !important; border: 0px;}
+.prikrepitkp td h2 {text-align: left !important;}
+
+.tablicaminiforma td {padding-right: 25px;}
+.pustulya {height: 12px; line-height: 12px;}
+.inputtextvminiforme {border: 0px; height: 20px; padding: 10px; font-family: Arial; font-size: 14px;}
+
+.tablicapreimuschestva td {padding: 5px 20px; vertical-align:top;}
+.tablicapreimuschestva img {width: 150px;}
+
+.knopka {font-family: Arial, sans-serif, Tahoma, Arial;font-size: 15px; font-weight: bold; cursor: pointer; color: #1569dF; border: 1px solid #c8d2e6;background-color: #e9edf5; height: 33px; width: 125px;}
+.knopka:hover {border: 2px solid #98a2b6;}
+.podpisvosnovnombloke {font-weight: bold; color: #1569dF}
+.inputcifri {width:60px;}
+
+.vivodi {background-color: #ffffff; padding: 25px 30px; border-left: 3px solid #c9cde5;}
+.vivodi.smallpadding {padding: 0 20px;}
+.vivodi h2 {text-align: left !important; margin-left: 22px;}
+
+.h2-styled {margin: 60px 0 35px; display: flex; justify-content: flex-start;}
+.h2-styled .num {width: 46px;  text-align:center; display: flex; align-items: center; justify-content: center; background: #b4c7e7; font-size: 22px;}
+.seredina .h2-styled h2 {text-align: left; margin: 0; max-width: calc(100% - 46px); font-size: 22px; display: flex; min-height: 46px; background: #f2f2f2; padding: 5px 30px; align-items: center; box-sizing: border-box;}
+.seredina .h2-styled p {text-align: left; margin: 0; max-width: calc(100% - 46px); font-size: 22px; display: flex; min-height: 46px; background: #f2f2f2; padding: 5px 30px; align-items: center; box-sizing: border-box;}
+
+.pomenshe {font-size: 15px !important; line-height: 21px !important;}
+
+.nizuha {width:100%; color: #eeeeee; background-color: #373d44; text-align:center; border:0px;}
+.nizniyblok {width:50%; color: #eeeeee;font-family: Arial !important;
+font-size:14px; line-height: 22px;border:0px;vertical-align:top;margin:auto;}
+.bigtext {font-size: 20px; line-height: 28px;}
+.nizniyblok td {width:50% !important; min-width:50% !important; text-align: left; padding: 20px 15px 20px 25px;vertical-align:top;}
+.nizniyblok b, .nizniyblok p {margin:0px; padding: 0px;}
+.bezpodcherkivaniya {text-decoration: none;}
+.seriy {color: #aaaaaa;font-size: 13px;}
+.liniyasleva {border-left: 1px solid #c8d2e6;; width:100%; padding: 0px 0px 0px 15px; margin:0px; box-sizing: border-box;}
+
+
+br + hr.grey {margin-top: 15px;}
+hr.grey {clear: both; margin: 35px 0; width: 100%; height: 1px; display: block; padding: 0; border: 0; background: #bfbfbf;}
+h3.text-check {font-size: inherit; font-weight: normal; text-align:left;}
+h3.text-check:before {content: ''; display: inline-block; width: 20px; height: 20px; margin: 0 10px -5px 0; background: url(https://energopro.kz/proekt/check.jpg);}
+.whatsapp:before {content: ''; display: inline-block; width: 23px; height: 23px; margin: 0 7px -5px 0; background: url(https://energopro.kz/proekt/whatsapp-energopro.png);}
+.skype:before {content: ''; display: inline-block; width: 23px; height: 23px; margin: 0 7px -5px 0; background: url(https://energopro.kz/proekt/skype-energopro.png);}
+.bezperenosa {white-space: nowrap;}
+
+.seredina ul.nobul {padding: 0 0 0 20px; margin: 0; }
+.seredina ul.nobul li {margin: 0 0 10px;}
+.seredina img.mx650 {display: table; margin: 0 auto; max-width: 650px; width: 100%;}
+
+/* Навигация */
+.sidebar-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav__link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #b4c7e7;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #e9edf5;
+}
+
+.sidebar-nav__item-link {
+  width: calc(100% - 20px);
+  font-size: 15px;
+}
+
+.sidebar-nav__item-link_active::after {
+  content: ':';
+}
+
+.active .sidebar-nav__item-link::after {
+  content: ':';
+}
+
+.sidebar-nav__arrow {
+  content: '';
+  display: block;
+  width: 11px;
+  height: 10px;
+  background: url("img/arrow.svg") center center no-repeat;
+  background-size: contain;
+  -webkit-transition: .1s;
+  transition: .1s;
+  opacity: 0.5;
+}
+
+.sidebar-nav__arrow_open, .active .sidebar-nav__arrow  {
+  -webkit-transition: .1s;
+  transition: .1s;
+  background: url("img/minilinija.png") center center no-repeat;
+  opacity: 0.5;
+  /* -webkit-transform: scale(1, -1);
+          transform: scale(1, -1); */
+}
+
+.sidebar-nav__sublist {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.sidebar-nav__sublist li.active a {background: #c9dfff;
+  }
+
+.sidebar-nav__sublist_active, .active .sidebar-nav__sublist {
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar-nav__sublist li {
+  border-bottom: 1px solid #dde1ef;
+}
+
+.sidebar-nav__sublist li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-nav__sublist li a {
+  display: block;
+  padding: 8px 15px;
+  font-size: 15px;
+  /* -webkit-transition: .5s;
+  transition: .5s; */
+  color: #1569dF;
+}
+
+.sidebar-nav__sublist li a:hover {
+  /* -webkit-transition: .5s;
+  transition: .5s; */
+  background: #c9dfff;
+}
+
+.sidebar-nav__sublist li ul {padding: 0; margin: 0; list-style-type: none; display: none;}
+.sidebar-nav__sublist li.active ul {display: block;}
+.sidebar-nav__sublist li.active ul li a {background: #e9edf5;}
+.sidebar-nav__sublist li ul li {font-weight: normal; position: relative; font-size: 13px; padding-left: 0px;}
+.sidebar-nav__sublist li ul li:first-child {border-top: 1px solid #dde1ef;}
+.sidebar-nav__sublist li ul li a {font-weight: normal!important; color: #606060; font-size: 13px; padding-left: 26px;}
+.sidebar-nav__sublist li ul li:hover>a {background: #c9dfff;}
+.sidebar-nav__sublist li ul li.active>a {background: #c9dfff;}
+.sidebar-nav__sublist li ul li:before {content: '- '; position: absolute; z-index:2; top: 7px; left: 16px; }
+
+/* /Навигация */
+
+.menu-icon {display: none; cursor: pointer;}
+a.tel {text-decoration: none; color: inherit;}
+.adv-block {display: block; margin: 0; padding: 30px 0 25px;}
+.adv-block .h2-styled {margin-top: 0;}
+.adv-block:after {content: ''; display:block; clear: both; width:100%; height: 30px; margin-bottom: -30px; padding:10px; box-sizing: border-box;}
+.adv-block p:last-child {padding-bottom: 0; margin-bottom: 0;}
+
+@media all and (max-width:1400px) {
+.tablicapreimuschestva img {min-width: 150px;}
+.galereyaminitd img {width: calc(100% - 16px); margin: 0 8px; padding: 0; min-width: 1px;}
+table {max-width: 100%!important;}
+textarea {max-width: 100%;}
+img {max-width:100%;}
+.blokblokovvalue img {min-width: 1px; width:calc(100% - 16px); padding: 0; margin: 0 8px;}
+
+.kartinkaobraschenie img {width: 100%;}
+.kartinkaobraschenie {width: 20%;}
+}
+
+
+/*Новые стили 01.12.20*/
+@media all and (max-width:1260px) {
+td.verhniyblokosobenniy.right-td {padding-left: 10px;}
+}
+/*Конец стилей 01.12.20*/
+
+
+@media all and (max-width:1000px) {
+.vtekste {float:none; max-width: 70%!important; margin: 0 auto 25px!important; display: table;}
+.galereyaminitd img {position: absolute; left:-9999px;}
+.galereyaminitd {padding: 0;}
+.galereyamini th {display: block; width: 100%; box-sizing: border-box; background: none; vertical-align: top;}
+.galereyamini td {display: block; width: 100%;box-sizing: border-box;  background: none; vertical-align: top;}
+.galereyamini td.hidden {display: none;}
+.galereyamini th img {max-width: 210px; display: table; margin: 20px auto;}
+.galereyamini th {font-size: 15px;}
+.vivodi {padding: 0 15px; box-sizing: border-box; font-size: 15px;}
+.bigtext {font-size: 15px; line-height: 125%;}
+.third-td {width:1px!important;}
+.kartinkaobraschenie img {min-width: 205px;}
+.buttonup {left: auto; right: 20px; bottom: 20px;}
+.levayakolonkavnutri2 {width:100%; background: #fff; transition: all 0.3s ease; position: absolute; right: -200%; z-index: 9999999; position: fixed; top: 65px; bottom: 0; display: block; height: calc(100vh - 65px); overflow-y: auto;}
+.menusamo {height: calc(100vh - 65px); overflow-y: auto;}
+.levayakolonkavnutri2.visible {right: 0;}
+.levayakolonkavnutri2 td {display: block!important;}
+.levayakolonka { z-index: 9999999;box-shadow: 0 0 3px rgba(0,0,0,0.1);  width: 100%; background: #fff; height: 66px; margin: 0; padding: 10px; box-sizing: border-box;}
+.levayakolonkavnutri td {padding: 0;}
+.levayakolonkavnutri td a {display: flex; align-items: center;}
+.levayakolonkavnutri td .logo-wrap {display: flex; align-items: center;}
+.levayakolonkavnutri td p {margin: 0!important; padding: 0!important;}
+.levayakolonkavnutri td p:first-child {margin: 0 20px 0 0!important;}
+.pravayakolonka {margin-left: 0; width:100%; padding-top: 66px; } 
+.menu-icon {display: block; position: absolute; top: 22px; right: 15px; width: 28px; height: 18px; border: 2px solid #000; border-left: 0; border-right: 0;}
+.menu-icon span {display: block; position: absolute; top: 50%; margin: -1px 0 0 0; left: 0; width: 100%; height: 2px; background: #000;}
+.kartinkaobraschenie {width: 25%;}
+.tablicaoprosniy {font-size: 10px; width:100%; box-sizing: border-box; border-width: 2px;}
+.tablicaoprosniy td {width: 50%!important; box-sizing: border-box;}
+.tablicaoprosniy td input[type=text] {width: 100%; box-sizing: border-box;}
+.tablicaoprosniy td input[type=text].inputcifri {width: 40px;}
+.tablicaoprosniy td textarea {width: 100%; box-sizing: border-box;}
+.tablicaoprosniy td select {width: 100%; box-sizing: border-box;}
+.tablicaoprosniy th {font-size: 9px;}
+.table-in {max-width: 100%; position: relative; overflow-x: auto;}
+.bezogranicheniy {max-width: 100%!important;}
+}
+
+@media all and (max-width:700px) { 
+/*Новые стили 01.12.20*/
+td.verhniyblokosobenniy.right-td {width: 100%; padding-left: 0px;}
+td.verhniyblokosobenniy.right-td a {color: inherit;}
+td.verhniyblokosobenniy.right-td p.cities {padding: 7px 0;}
+td.verhniyblokosobenniy.right-td p.cities a.btn {padding: 6px 10px; font-size: 14px;}
+/*Конец стилей 01.12.20*/
+
+@media all and (max-width:700px) { 
+.adaptive-a {position: absolute; margin-top: -50px;}
+.tablicaminiforma td {padding-right: 0;}
+.inputtextvminiforme {margin-bottom: 10px; width: 100%; box-sizing: border-box; height: 40px;}
+.tablicapreimuschestva img {display: table; margin: 20px auto 0px;}
+.seredina table td.moved {text-align:center; font-weight:bold;}
+table.MsoTableGrid td {display: table-cell!important; width: 33%;}
+.seredina table.MsoTableGrid td {display: table-cell!important; width: 33%;}
+.MsoTableGrid th {min-width: 33%; width: 33%; padding: 5px 2px; min-width:1px; font-size: 9px; line-height: 125%;}
+.MsoTableGrid td {min-width: 33%; width: 33%; padding: 5px 2px; min-width:1px; font-size: 9px; line-height: 125%;}
+.seredina table.tablicaoprosniy td {display: table-cell;}
+.seredina table.tablicaoprosniy {line-height: 125%!important;}
+.verhniyblok tr {display: flex; flex-wrap: wrap;}
+.verhniyblok tr td {width: 50%; padding: 3px; box-sizing: border-box; margin: 0;}
+.verhniyblok tr td.verhniyblokniz {width:100%;}
+.verhniyblok {font-size: 10px;}
+.seredina {padding: 0 10px;}
+.seredina table td {display: block; width:100%; box-sizing: border-box;}
+.seredina table td.kartinkaobraschenie {max-width: 205px; margin-left: auto; margin-right: auto;}
+.seredina h1 {padding: 0; margin: 0;}
+.kartinkaobraschenie img {display: table;margin: 0 auto; max-width:100%;}
+.obraschenie div {border: 0!important; padding: 0!important;}
+.obraschenie {font-size: 14px; padding: 0;}
+.blokblokovvalue p {font-size: 14px;}
+.seredina h2, .seredina h1 {line-height: 125%!important; font-size: 20px;}
+.blokblokovvalue img {max-width: 400px; display: table; margin: 0 auto;}
+
+.nizniyblok td {display: block; width: 100%!important; box-sizing: border-box;}
+.nizniyblok {width: 100%;}
+.nizniyblok br + br {display: none;}
+.nizniyblok br:first-child {display: none;}
+.seredina {font-size: 14px;}
+
+}
+
+@media all and (max-width:500px) {
+.levayakolonkavnutri td p:first-child {font-size: 20px!important;}
+.levayakolonkavnutri td p {font-size: 9px!important;}
+.levayakolonka {height: 48px;}
+.pravayakolonka {padding-top: 48px;}
+.verhniyblokniz  {font-size: 12px;}
+.menu-icon {top: 14px;}
+.levayakolonkavnutri2 {top: 48px; height: calc(100vh - 48px);}
+.menusamo { height: calc(100vh - 48px);}
+.seredina .h2-styled h2 {font-size: 19px;}
+}

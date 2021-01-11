@@ -1,0 +1,140 @@
+$(document).ready(function() {
+    
+    $(".menu-icon").click(
+      function(){
+        $('.levayakolonkavnutri2').toggleClass("visible");
+        return false;
+      }
+    )
+
+		$(".sidebar-nav__item-parent .sidebar-nav__link-wrapper").click(
+      function(){
+        $(this).closest('li').toggleClass('active');
+        return false;
+      }
+    )
+
+
+
+		windowW = $(window).width();
+
+
+	   if (windowW < 1000) {
+
+		   $( "a[name]" ).addClass('adaptive-a');
+
+$( ".MsoTableGrid" ).each(function(  ) {
+$(this).find('th').eq(3).closest('table').addClass('adaptive');
+});
+
+
+$( ".MsoTableGrid.adaptive tr" ).each(function(  ) {
+	var par = $(this);
+	$(this).find('td').eq(0).addClass('moved').attr('colspan' , '3').insertBefore(par);
+	
+
+});
+
+$( "img.vtekste" ).each(function(  ) {
+	var hhh = $(this).next('h3');
+	hhh.insertBefore(this);
+
+});
+
+
+
+  $('.MsoTableGrid.adaptive th').eq(0).remove();
+
+
+		 
+		  
+		
+		
+
+		$( ".tablicaoprosniy tr" ).each(function( index ) {
+	$(this).find('td').eq(2).addClass('third-td');
+	$(this).find('th').eq(2).addClass('third-td');
+});
+
+$( ".galereyamini tr th" ).each(function(  ) {
+	var trr = $(this).closest('tr').index();
+	var tri = $(this).index();
+	$(this).addClass('t' + trr + tri);
+
+});
+
+$( ".galereyamini tr td" ).each(function(  ) {
+	var trr = $(this).closest('tr').prev().index();
+	var tri = $(this).index();
+	$(this).addClass('t' + trr + tri);
+	var cl = $(this).html();
+	$('th.t' + trr + '' + tri).append(cl);
+	$(this).addClass('hidden');
+	
+
+});
+
+
+
+
+
+
+$( ".third-td" ).each(function( index ) {
+	var par = $(this).closest('tr').find('td').eq(1);
+
+	var text = $(this).html();
+	par.append('<br>' + text);
+	$(this).prev('td').prop('colspan', '1');
+	$(this).remove();
+});
+
+
+	  }
+
+	 
+
+}); 
+
+$(function () {
+
+
+if(window.location.pathname=='/'){
+ $('.sidebar-nav__list li').eq(0).addClass('active');
+}
+
+if(window.location.pathname!='/'){
+ $('.logo-wrap').wrap('<a href="/"></a>');
+}
+
+
+
+
+
+   
+});
+
+
+$(function() {
+
+		var pathname_url = window.location.pathname;
+		var href_url = window.location.href;
+
+		$(".sidebar-nav__list li").each(function () {
+
+			var link = $(this).find("a").attr("href");
+
+			if(pathname_url == link || href_url == link) {
+
+				$(this).addClass("active");
+				$(this).closest('.sidebar-nav__item-parent').addClass('active');
+				$(this).closest('.sidebar-nav__item-parent').addClass('active');
+				$(this).closest('li').closest('ul').closest('li').addClass('active');
+
+			}
+
+		});
+
+
+		
+
+	});

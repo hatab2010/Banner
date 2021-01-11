@@ -1,0 +1,369 @@
+.banner{
+  font-family: Calibri;
+  font-family: Arial;
+  width: 700px;
+  display: flex;
+  position: relative;
+
+  &__header{
+    min-width: 410px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__down-title{
+    z-index: 3;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    line-height: 150%;
+  }
+
+  &__title{
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    z-index: 3;
+  }
+
+  &__sub-title{
+    margin-top: 3px;
+    z-index: 3;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+  }
+
+  &__item-list{
+    margin-top: 20px;
+
+    p{
+      font-weight: 600;
+      font-size: 90%;
+    }
+  }
+
+
+  &__image{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    line-height: 0;
+    height: 100%;
+
+    img{
+      max-width: initial;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  &__select{
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    padding: 3px;
+    text-transform: uppercase;
+    border: 1px solid #3399ff;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 8px;
+
+    &:first-child{
+      margin-top: 0px;
+    }
+
+    &--active{
+      background-color: #b6dbff;
+    }
+  }
+
+
+  &__content{
+    position: relative;
+    padding: 17px;
+    background-color: white;
+    min-width: 240px;
+    padding-bottom: 50px;
+
+    &--step4{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p{
+        font-size: 15px;
+        color: black;
+      }
+    }
+
+    &--step0{
+      p{
+        line-height: 150%;
+      }
+
+    }
+
+  }
+
+  &__button-close{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 11px;
+    height: 11px;
+    z-index: 13;
+
+    svg{
+      position: absolute;
+      top: 0;
+      left:0;
+    }
+  }
+
+  &__boon{
+    float: left;
+    color: #777777;
+    font-weight: 600;
+    font-size: 90%;
+  }
+
+  &__down-wrapper{
+    margin-top: 25px;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 15px;
+    width: calc(100% - 34px);
+    box-sizing: border-box;
+  }
+
+  &__button-next{
+    float: right;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+
+    &--send{
+      padding: 5px;
+      background-color: #8dc6ff;
+      color: #3e3e3e;
+      font-size: 13px;
+      float: left;
+      border: initial;
+    }
+  }
+
+  &__button-wrapper{
+    position: absolute;
+    bottom: 35px;
+    &--theme{
+      &--first{
+        &:before{
+          content: "Считаем?";
+          margin-right: 15px;
+          color: #5c5c5c;
+          font-weight: 600;
+          font-size: 13px;
+        }
+
+        .banner__button{
+          &-close, &-next{
+            float: initial;
+            font-weight: 600;
+            font-size: 13px;
+            min-width: 30px;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            text-transform: uppercase;
+            color: #3e3e3e;
+            width: initial;
+            height: initial;
+            top: initial;
+            padding: 5px;
+            background-color: #8dc6ff;
+
+            &:last-child{
+              margin-left: -4px;
+            }
+          }
+          &-close{
+            background-color: #ffc8c8;
+          }
+        }
+      }
+    }
+  }
+
+  &__input{
+    color: black;
+    padding-left: 6px;
+    height: 24px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: solid 1px #929292;
+    width: 100%;
+
+    &--exception{
+        border: solid 1px #ffa0a0 !important;
+    }
+
+    &:focus{
+      border: solid 1px #3399ff;
+      border-radius: 0;
+      outline: none;
+    }
+  }
+
+  &__holder{
+    box-sizing: border-box;
+    background-color: #e1e1e1;
+    color: #686868;
+    display: inline-block;
+    border: solid 1px #929292;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 6px;
+    margin-left: 5px;
+    min-width: 44px;
+    font-size: 70%;
+    font-weight: 600;
+
+    &--power{
+      line-height: 13px;
+    }
+  }
+
+  &__row{
+    display: none;
+    width: 100%;
+    vertical-align: center;
+    align-content: center;
+    margin-top: 5px;
+
+    &:first-child{
+      margin-top: 0;
+    }
+
+    &--visible{
+      display: flex;
+    }
+
+    &--offset{
+      &--top{
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__accept{
+    opacity: 0;
+    height: 24px;
+    z-index: 13;
+    width: 15px;
+    position: absolute;
+    left: 100%;
+    margin-left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--select{
+      margin-left: -35px;
+    }
+
+    img{
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__input-wrapper{
+    position: relative;
+    width: 100%;
+
+    &--accept{
+      .banner__accept{
+        opacity: 1;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    display: block;
+    transform: initial;
+    margin-top: initial;
+    width: 100%;
+
+    &__header{
+      height: 200px;
+    }
+
+    &__button-wrapper{
+      position: initial;
+    }
+
+    &__content--step3{
+      .banner__boon{
+        display: none;
+      }
+    }
+
+    &__down-wrapper{
+      display: block;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    &__header{
+      min-width: initial;
+      width: 100%;
+    }
+
+    &__content{
+      padding-bottom: 5px;
+    }
+  }
+}
+
+span.yellow{
+  background-color: #ffe74d;;
+  color: black;
+  display: inline;
+  padding: 8px;
+  line-height: 190%;
+
+  &:last-child{
+    margin-right: -5px;
+  }
+}
+
+span.blue{
+  padding: 5px;
+  background-color: #8dc6ff;
+  margin-left: -5px;
+  color: black;
+  display: inline;
+  line-height: 150%;
+}
+
+.hide{
+  display: none;
+}
+
+span.red{
+  color: red;
+  font-size: 70%;
+}
