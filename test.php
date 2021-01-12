@@ -1,4 +1,4 @@
-﻿ф<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -620,14 +620,10 @@
             </div>
             <div class="banner__content anner__content--active banner__content--step0">
                 <div class="banner__button-close">
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="11px" height="11px">
-                        <path fill-rule="evenodd" fill="rgb(177, 176, 175)"
-                              d="M11.001,1.374 L6.875,5.500 L11.000,9.625 L9.625,11.000
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
+                        <path fill-rule="evenodd" fill="rgb(177, 176, 175)" d="M11.001,1.374 L6.875,5.500 L11.000,9.625 L9.625,11.000
                               L5.500,6.875 L1.375,11.000 L0.000,9.625 L4.125,5.500 L-0.001,1.374
-                              L1.374,-0.001 L5.500,4.125 L9.626,-0.001 L11.001,1.374 Z"/>
+                              L1.374,-0.001 L5.500,4.125 L9.626,-0.001 L11.001,1.374 Z"></path>
                     </svg>
                 </div>
                 <div class="banner__sub-title">
@@ -656,14 +652,10 @@
             </div>
             <div class="banner__content anner__content--active hide banner__content--step1">
                 <div class="banner__button-close">
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="11px" height="11px">
-                        <path fill-rule="evenodd" fill="rgb(177, 176, 175)"
-                              d="M11.001,1.374 L6.875,5.500 L11.000,9.625 L9.625,11.000
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
+                        <path fill-rule="evenodd" fill="rgb(177, 176, 175)" d="M11.001,1.374 L6.875,5.500 L11.000,9.625 L9.625,11.000
                               L5.500,6.875 L1.375,11.000 L0.000,9.625 L4.125,5.500 L-0.001,1.374
-                              L1.374,-0.001 L5.500,4.125 L9.626,-0.001 L11.001,1.374 Z"/>
+                              L1.374,-0.001 L5.500,4.125 L9.626,-0.001 L11.001,1.374 Z"></path>
                     </svg>
                 </div>
                 <div class="banner__sub-title">
@@ -701,21 +693,17 @@
                         <i>Только сегодня</i>
                     </div>
                     <div class="banner__button-next">
-                        ->далее
+                        -&gt;далее
                     </div>
                 </div>
 
             </div>
             <div class="banner__content anner__content--active hide banner__content--step2">
                 <div class="banner__button-close">
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="11px" height="11px">
-                        <path fill-rule="evenodd" fill="rgb(177, 176, 175)"
-                              d="M11.001,1.374 L6.875,5.500 L11.000,9.625 L9.625,11.000
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
+                        <path fill-rule="evenodd" fill="rgb(177, 176, 175)" d="M11.001,1.374 L6.875,5.500 L11.000,9.625 L9.625,11.000
                               L5.500,6.875 L1.375,11.000 L0.000,9.625 L4.125,5.500 L-0.001,1.374
-                              L1.374,-0.001 L5.500,4.125 L9.626,-0.001 L11.001,1.374 Z"/>
+                              L1.374,-0.001 L5.500,4.125 L9.626,-0.001 L11.001,1.374 Z"></path>
                     </svg>
                 </div>
                 <div class="banner__sub-title">
@@ -727,7 +715,7 @@
                     <div class="banner__row p7 banner__row--visible">
                         <div class="banner__input-wrapper">
                             <input class="banner__input" id="selectProduction" name="product" style="display: none" type="text">
-                            <input class="banner__input" name="Тепловая мощность" type="text" placeholder="Тепловая мощность">
+                            <input class="banner__input" name="teplovayamoschnost" type="text" placeholder="Тепловая мощность">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -736,7 +724,7 @@
                     </div>
                     <div class="banner__row p7 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Т1 (среда 1)" type="text" placeholder="Укажите Т1 (среда 1)">
+                            <input class="banner__input" name="Т1sreda1" type="text" placeholder="Укажите Т1 (среда 1)">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -745,7 +733,7 @@
                     </div>
                     <div class="banner__row p7 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Т2 (среда 1)" type="text" placeholder="Укажите Т2 (среда 1)">
+                            <input class="banner__input" name="Т2sreda1" type="text" placeholder="Укажите Т2 (среда 1)">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -754,7 +742,7 @@
                     </div>
                     <div class="banner__row p7 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Т3 (среда 2)" type="text" placeholder="Укажите Т3 (среда 2)">
+                            <input class="banner__input" name="Т3sreda2" type="text" placeholder="Укажите Т3 (среда 2)">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -763,7 +751,7 @@
                     </div>
                     <div class="banner__row p7 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Т4 (среда 2)" type="text" placeholder="Укажите Т4 (среда 2)">
+                            <input class="banner__input" name="Т4sreda2" type="text" placeholder="Укажите Т4 (среда 2)">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -772,7 +760,27 @@
                     </div>
                     <div class="banner__row p7 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="среда 1"  type="text" placeholder="Выберите среда 1">
+                            <select class="banner__input" name="tipsredi1">
+                                <option value="" disabled="" selected="">Выберите тип охл. жидкости</option>
+                                <option value="Вода">Вода</option>
+                                <option value="Этиленгликоль 5%">Этиленгликоль 5%</option>
+                                <option value="Этиленгликоль 10%">Этиленгликоль 10%</option>
+                                <option value="Этиленгликоль 15%">Этиленгликоль 15%</option>
+                                <option value="Этиленгликоль 20%">Этиленгликоль 20%</option>
+                                <option value="Этиленгликоль 25%">Этиленгликоль 25%</option>
+                                <option value="Этиленгликоль 30%">Этиленгликоль 30%</option>
+                                <option value="Этиленгликоль 35%">Этиленгликоль 35%</option>
+                                <option value="Этиленгликоль 40%">Этиленгликоль 40%</option>
+                                <option value="Этиленгликоль 45%">Этиленгликоль 45%</option>
+                                <option value="Этиленгликоль 50%">Этиленгликоль 50%</option>
+                                <option value="Пропиленгликоль 5%">Пропиленгликоль 5%</option>
+                                <option value="Пропиленгликоль 10%">Пропиленгликоль 10%</option>
+                                <option value="Пропиленгликоль 15%">Пропиленгликоль 15%</option>
+                                <option value="Пропиленгликоль 20%">Пропиленгликоль 20%</option>
+                                <option value="Пропиленгликоль 25%">Пропиленгликоль 25%</option>
+                                <option value="Пропиленгликоль 30%">Пропиленгликоль 30%</option>
+                                <option value="Пропиленгликоль 35%">Пропиленгликоль 35%</option>
+                            </select>
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -780,7 +788,27 @@
                     </div>
                     <div class="banner__row p7 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="среда 2" type="text" placeholder="Выберите среда 2">
+                            <select class="banner__input" name="tipsredi2">
+                                <option value="" disabled="" selected="">Выберите тип охл. жидкости</option>
+                                <option value="Вода">Вода</option>
+                                <option value="Этиленгликоль 5%">Этиленгликоль 5%</option>
+                                <option value="Этиленгликоль 10%">Этиленгликоль 10%</option>
+                                <option value="Этиленгликоль 15%">Этиленгликоль 15%</option>
+                                <option value="Этиленгликоль 20%">Этиленгликоль 20%</option>
+                                <option value="Этиленгликоль 25%">Этиленгликоль 25%</option>
+                                <option value="Этиленгликоль 30%">Этиленгликоль 30%</option>
+                                <option value="Этиленгликоль 35%">Этиленгликоль 35%</option>
+                                <option value="Этиленгликоль 40%">Этиленгликоль 40%</option>
+                                <option value="Этиленгликоль 45%">Этиленгликоль 45%</option>
+                                <option value="Этиленгликоль 50%">Этиленгликоль 50%</option>
+                                <option value="Пропиленгликоль 5%">Пропиленгликоль 5%</option>
+                                <option value="Пропиленгликоль 10%">Пропиленгликоль 10%</option>
+                                <option value="Пропиленгликоль 15%">Пропиленгликоль 15%</option>
+                                <option value="Пропиленгликоль 20%">Пропиленгликоль 20%</option>
+                                <option value="Пропиленгликоль 25%">Пропиленгликоль 25%</option>
+                                <option value="Пропиленгликоль 30%">Пропиленгликоль 30%</option>
+                                <option value="Пропиленгликоль 35%">Пропиленгликоль 35%</option>
+                            </select>
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -788,7 +816,7 @@
                     </div>
                     <div class="banner__row p5 p3 p2 p0 p1 p4 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input paired" name="Холодопроизвод-ть" type="text" placeholder="Холодопроизвод-ть">
+                            <input class="banner__input paired" name="holodoproizvoditelnost" type="text" placeholder="Холодопроизвод-ть">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -797,7 +825,7 @@
                     </div>
                     <div class="banner__row p5 p3 p2 p4 p0 p1 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input paired" name="Расход охл. жидкости" type="text" placeholder="Или расход охл. жидкости">
+                            <input class="banner__input paired" name="rashod" type="text" placeholder="Или расход охл. жидкости">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -806,7 +834,7 @@
                     </div>
                     <div class="banner__row p6 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Расход охл. жидкости" type="text" placeholder="Расход охл. жидкости">
+                            <input class="banner__input" name="rashod" type="text" placeholder="Расход охл. жидкости">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -815,7 +843,7 @@
                     </div>
                     <div class="banner__row p6 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Требуемый напор" type="text" placeholder="Требуемый напор">
+                            <input class="banner__input" name="napor" type="text" placeholder="Требуемый напор">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -824,7 +852,7 @@
                     </div>
                     <div class="banner__row p5 p3 p2 p4 p0 p1 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Т на входе" type="text" placeholder="Укажите Т на входе">
+                            <input class="banner__input" name="tvhod" type="text" placeholder="Укажите Т на входе">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -833,7 +861,7 @@
                     </div>
                     <div class="banner__row p5 p3 p2 p4 p0 p1 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Т на выходе" type="text" placeholder="Укажите Т на выходе">
+                            <input class="banner__input" name="tvihod" type="text" placeholder="Укажите Т на выходе">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -843,8 +871,8 @@
                     <div class="banner__row--offset--top"></div>
                     <div class="banner__row p5 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <select class="banner__input" name="тип АБХМ">
-                                <option value="" disabled selected>Выберите тип АБХМ</option>
+                            <select class="banner__input" name="tipabhm">
+                                <option value="" disabled="" selected="">Выберите тип АБХМ</option>
                                 <option value="на горячей воде">На горячей воде</option>
                                 <option value="на паре">На паре</option>
                                 <option value="на газе">На газе</option>
@@ -858,8 +886,8 @@
                     </div>
                     <div class="banner__row p4 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <select class="banner__input" name="тип чиллера">
-                                <option value="" disabled selected>Выберите тип чиллера</option>
+                            <select class="banner__input" name="tipchillera">
+                                <option value="" disabled="" selected="">Выберите тип чиллера</option>
                                 <option value="С воздушным охлаждением (уличный моноблок) с винтовыми компрессорами и кожухотрубчатый испаритель">
                                     С воздушным охлаждением (уличный моноблок) с винтовыми компрессорами и
                                     кожухотрубчатый испаритель
@@ -906,8 +934,8 @@
                     </div>
                     <div class="banner__row p5 p3 p2 p4 p6 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <select class="banner__input" name="тип охл. жидкости">
-                                <option value="" disabled selected>Выберите тип охл. жидкости</option>
+                            <select class="banner__input" name="tipzhidkosti">
+                                <option value="" disabled="" selected="">Выберите тип охл. жидкости</option>
                                 <option value="Вода">Вода</option>
                                 <option value="Этиленгликоль 5%">Этиленгликоль 5%</option>
                                 <option value="Этиленгликоль 10%">Этиленгликоль 10%</option>
@@ -934,95 +962,95 @@
                     </div>
                     <div class="banner__row p5 p3 p2 p4 p0 p1 p6 banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <select class="banner__input" name="Город установки">
-                                <option value="" disabled selected>Выберите город установки</option>
-                                <option value='Абай'> Абай</option>
-                                <option value='Акколь'> Акколь</option>
-                                <option value='Аксай'> Аксай</option>
-                                <option value='Аксу'> Аксу</option>
-                                <option value='Актобе'> Актобе</option>
-                                <option value='Актау'> Актау</option>
-                                <option value='Алга'> Алга</option>
-                                <option value='Алматы'> Алматы</option>
-                                <option value='Аркалык'> Аркалык</option>
-                                <option value='Аральск'> Аральск</option>
-                                <option value='Арыс'> Арыс</option>
-                                <option value='Атырау'> Атырау</option>
-                                <option value='Атбасар'> Атбасар</option>
-                                <option value='Аягуз'> Аягуз</option>
-                                <option value='Байконур'> Байконур</option>
-                                <option value='Балхаш'> Балхаш</option>
-                                <option value='Булаево'> Булаево</option>
-                                <option value='Державинск'> Державинск</option>
-                                <option value='Есик'> Есик</option>
-                                <option value='Есиль'> Есиль</option>
-                                <option value='Ерейментау'> Ерейментау</option>
-                                <option value='Жаркент'> Жаркент</option>
-                                <option value='Жезказган'> Жезказган</option>
-                                <option value='Жанаозен'> Жанаозен</option>
-                                <option value='Жанатас'> Жанатас</option>
-                                <option value='Жем'> Жем</option>
-                                <option value='Житикара'> Житикара</option>
-                                <option value='Жетысай'> Жетысай</option>
-                                <option value='Зайсан'> Зайсан</option>
-                                <option value='Зыряновск'> Зыряновск</option>
-                                <option value='Казалинск'> Казалинск</option>
-                                <option value='Кандыагаш'> Кандыагаш</option>
-                                <option value='Капчагай'> Капчагай</option>
-                                <option value='Караганда'> Караганда</option>
-                                <option value='Каражал'> Каражал</option>
-                                <option value='Каратау'> Каратау</option>
-                                <option value='Каркаралинск'> Каркаралинск</option>
-                                <option value='Каскелен'> Каскелен</option>
-                                <option value='Кентау'> Кентау</option>
-                                <option value='Кокшетау'> Кокшетау</option>
-                                <option value='Костанай'> Костанай</option>
-                                <option value='Кызылорда'> Кызылорда</option>
-                                <option value='Курчатов'> Курчатов</option>
-                                <option value='Кульсары'> Кульсары</option>
-                                <option value='Лисаковск'> Лисаковск</option>
-                                <option value='Ленгер'> Ленгер</option>
-                                <option value='Макинск'> Макинск</option>
-                                <option value='Мамлютка'> Мамлютка</option>
-                                <option value='Нур-Султан (Астана)'> Нур-Султан (Астана)</option>
-                                <option value='Павлодар'> Павлодар</option>
-                                <option value='Петропавловск'> Петропавловск</option>
-                                <option value='Приозёрск'> Приозёрск</option>
-                                <option value='Рудный'> Рудный</option>
-                                <option value='Риддер'> Риддер</option>
-                                <option value='Сарань'> Сарань</option>
-                                <option value='Сарканд'> Сарканд</option>
-                                <option value='Сарыагаш'> Сарыагаш</option>
-                                <option value='Сатпаев'> Сатпаев</option>
-                                <option value='Сергеевка'> Сергеевка</option>
-                                <option value='Семей'> Семей</option>
-                                <option value='Серебрянск'> Серебрянск</option>
-                                <option value='Степногорск'> Степногорск</option>
-                                <option value='Степняк'> Степняк</option>
-                                <option value='Тайынша'> Тайынша</option>
-                                <option value='Талгар'> Талгар</option>
-                                <option value='Тараз'> Тараз</option>
-                                <option value='Талдыкорган'> Талдыкорган</option>
-                                <option value='Текели'> Текели</option>
-                                <option value='Темир'> Темир</option>
-                                <option value='Темиртау'> Темиртау</option>
-                                <option value='Туркестан'> Туркестан</option>
-                                <option value='Уральск'> Уральск</option>
-                                <option value='Усть-Каменогорск'> Усть-Каменогорск</option>
-                                <option value='Учарал'> Учарал</option>
-                                <option value='Уштобе'> Уштобе</option>
-                                <option value='Форт-Шевченко'> Форт-Шевченко</option>
-                                <option value='Хромтау'> Хромтау</option>
-                                <option value='Чардара'> Чардара</option>
-                                <option value='Шалкар'> Шалкар</option>
-                                <option value='Чарск'> Чарск</option>
-                                <option value='Шахтинск'> Шахтинск</option>
-                                <option value='Шемонаиха'> Шемонаиха</option>
-                                <option value='Шу'> Шу</option>
-                                <option value='Шымкент'> Шымкент</option>
-                                <option value='Щучинск'> Щучинск</option>
-                                <option value='Экибастуз'> Экибастуз</option>
-                                <option value='Эмба'> Эмба</option>
+                            <select class="banner__input" name="gorod">
+                                <option value="" disabled="" selected="">Выберите город установки</option>
+                                <option value="Абай"> Абай</option>
+                                <option value="Акколь"> Акколь</option>
+                                <option value="Аксай"> Аксай</option>
+                                <option value="Аксу"> Аксу</option>
+                                <option value="Актобе"> Актобе</option>
+                                <option value="Актау"> Актау</option>
+                                <option value="Алга"> Алга</option>
+                                <option value="Алматы"> Алматы</option>
+                                <option value="Аркалык"> Аркалык</option>
+                                <option value="Аральск"> Аральск</option>
+                                <option value="Арыс"> Арыс</option>
+                                <option value="Атырау"> Атырау</option>
+                                <option value="Атбасар"> Атбасар</option>
+                                <option value="Аягуз"> Аягуз</option>
+                                <option value="Байконур"> Байконур</option>
+                                <option value="Балхаш"> Балхаш</option>
+                                <option value="Булаево"> Булаево</option>
+                                <option value="Державинск"> Державинск</option>
+                                <option value="Есик"> Есик</option>
+                                <option value="Есиль"> Есиль</option>
+                                <option value="Ерейментау"> Ерейментау</option>
+                                <option value="Жаркент"> Жаркент</option>
+                                <option value="Жезказган"> Жезказган</option>
+                                <option value="Жанаозен"> Жанаозен</option>
+                                <option value="Жанатас"> Жанатас</option>
+                                <option value="Жем"> Жем</option>
+                                <option value="Житикара"> Житикара</option>
+                                <option value="Жетысай"> Жетысай</option>
+                                <option value="Зайсан"> Зайсан</option>
+                                <option value="Зыряновск"> Зыряновск</option>
+                                <option value="Казалинск"> Казалинск</option>
+                                <option value="Кандыагаш"> Кандыагаш</option>
+                                <option value="Капчагай"> Капчагай</option>
+                                <option value="Караганда"> Караганда</option>
+                                <option value="Каражал"> Каражал</option>
+                                <option value="Каратау"> Каратау</option>
+                                <option value="Каркаралинск"> Каркаралинск</option>
+                                <option value="Каскелен"> Каскелен</option>
+                                <option value="Кентау"> Кентау</option>
+                                <option value="Кокшетау"> Кокшетау</option>
+                                <option value="Костанай"> Костанай</option>
+                                <option value="Кызылорда"> Кызылорда</option>
+                                <option value="Курчатов"> Курчатов</option>
+                                <option value="Кульсары"> Кульсары</option>
+                                <option value="Лисаковск"> Лисаковск</option>
+                                <option value="Ленгер"> Ленгер</option>
+                                <option value="Макинск"> Макинск</option>
+                                <option value="Мамлютка"> Мамлютка</option>
+                                <option value="Нур-Султан (Астана)"> Нур-Султан (Астана)</option>
+                                <option value="Павлодар"> Павлодар</option>
+                                <option value="Петропавловск"> Петропавловск</option>
+                                <option value="Приозёрск"> Приозёрск</option>
+                                <option value="Рудный"> Рудный</option>
+                                <option value="Риддер"> Риддер</option>
+                                <option value="Сарань"> Сарань</option>
+                                <option value="Сарканд"> Сарканд</option>
+                                <option value="Сарыагаш"> Сарыагаш</option>
+                                <option value="Сатпаев"> Сатпаев</option>
+                                <option value="Сергеевка"> Сергеевка</option>
+                                <option value="Семей"> Семей</option>
+                                <option value="Серебрянск"> Серебрянск</option>
+                                <option value="Степногорск"> Степногорск</option>
+                                <option value="Степняк"> Степняк</option>
+                                <option value="Тайынша"> Тайынша</option>
+                                <option value="Талгар"> Талгар</option>
+                                <option value="Тараз"> Тараз</option>
+                                <option value="Талдыкорган"> Талдыкорган</option>
+                                <option value="Текели"> Текели</option>
+                                <option value="Темир"> Темир</option>
+                                <option value="Темиртау"> Темиртау</option>
+                                <option value="Туркестан"> Туркестан</option>
+                                <option value="Уральск"> Уральск</option>
+                                <option value="Усть-Каменогорск"> Усть-Каменогорск</option>
+                                <option value="Учарал"> Учарал</option>
+                                <option value="Уштобе"> Уштобе</option>
+                                <option value="Форт-Шевченко"> Форт-Шевченко</option>
+                                <option value="Хромтау"> Хромтау</option>
+                                <option value="Чардара"> Чардара</option>
+                                <option value="Шалкар"> Шалкар</option>
+                                <option value="Чарск"> Чарск</option>
+                                <option value="Шахтинск"> Шахтинск</option>
+                                <option value="Шемонаиха"> Шемонаиха</option>
+                                <option value="Шу"> Шу</option>
+                                <option value="Шымкент"> Шымкент</option>
+                                <option value="Щучинск"> Щучинск</option>
+                                <option value="Экибастуз"> Экибастуз</option>
+                                <option value="Эмба"> Эмба</option>
                             </select>
                             <div class="banner__accept banner__accept--select">
                                 <img src="/assets/banner/accept.png">
@@ -1035,21 +1063,17 @@
                         <i>Только сегодня</i>
                     </div>
                     <div class="banner__button-next">
-                        ->далее
+                        -&gt;далее
                     </div>
                 </div>
 
             </div>
             <div class="banner__content anner__content--active hide banner__content--step3">
                 <div class="banner__button-close">
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="11px" height="11px">
-                        <path fill-rule="evenodd" fill="rgb(177, 176, 175)"
-                              d="M11.001,1.374 L6.875,5.500 L11.000,9.625 L9.625,11.000
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
+                        <path fill-rule="evenodd" fill="rgb(177, 176, 175)" d="M11.001,1.374 L6.875,5.500 L11.000,9.625 L9.625,11.000
                               L5.500,6.875 L1.375,11.000 L0.000,9.625 L4.125,5.500 L-0.001,1.374
-                              L1.374,-0.001 L5.500,4.125 L9.626,-0.001 L11.001,1.374 Z"/>
+                              L1.374,-0.001 L5.500,4.125 L9.626,-0.001 L11.001,1.374 Z"></path>
                     </svg>
                 </div>
                 <div class="banner__sub-title">
@@ -1060,7 +1084,7 @@
                 <div class="banner__item-list">
                     <div class="banner__row banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Имя" type="text" placeholder="Ваше имя">
+                            <input class="banner__input" name="fio" type="text" placeholder="Ваше имя">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -1068,7 +1092,7 @@
                     </div>
                     <div class="banner__row banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Email" type="text" placeholder="Ваш email">
+                            <input class="banner__input" name="email" type="text" placeholder="Ваш email">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -1076,7 +1100,7 @@
                     </div>
                     <div class="banner__row banner__row--visible">
                         <div class="banner__input-wrapper">
-                            <input class="banner__input" name="Телефон" type="text" placeholder="Ваш телефон">
+                            <input class="banner__input" name="telefon" type="text" placeholder="Ваш телефон">
                             <div class="banner__accept">
                                 <img src="/assets/banner/accept.png">
                             </div>
@@ -1094,14 +1118,10 @@
             </div>
             <div class="banner__content anner__content--active hide banner__content--step4">
                 <div class="banner__button-close">
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="11px" height="11px">
-                        <path fill-rule="evenodd" fill="rgb(177, 176, 175)"
-                              d="M11.001,1.374 L6.875,5.500 L11.000,9.625 L9.625,11.000
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
+                        <path fill-rule="evenodd" fill="rgb(177, 176, 175)" d="M11.001,1.374 L6.875,5.500 L11.000,9.625 L9.625,11.000
                               L5.500,6.875 L1.375,11.000 L0.000,9.625 L4.125,5.500 L-0.001,1.374
-                              L1.374,-0.001 L5.500,4.125 L9.626,-0.001 L11.001,1.374 Z"/>
+                              L1.374,-0.001 L5.500,4.125 L9.626,-0.001 L11.001,1.374 Z"></path>
                     </svg>
                 </div>
                 <div class="banner__sub-title">
@@ -1134,10 +1154,10 @@
             "daysDelay": 0,                         //Сколько дней, после показа, баннер больше не будет преследовать пользователя
             "countries": ["Казахстан"],             //Список доступных для баннера стран
             "callback": function (data) {
-                var posting = $.post( "/send.php", data );  //В этом месте нужно указать ссылку на скрипт отвечающий за приём данных
-                posting.done(function(content){
-
-                })
+                // var posting = $.post( "/send.php", data );  //В этом месте нужно указать ссылку на скрипт отвечающий за приём данных
+                // posting.done(function(content){
+                //
+                // })
             }
         }
     );

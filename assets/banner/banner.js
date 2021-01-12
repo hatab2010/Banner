@@ -205,6 +205,10 @@ function Banner(options) {
                 _data[$("#selectProduction").attr("name")] = _data["production"].value;
                 _data["production"] = _data["production"].value;
                 if (_callback) _callback(_data);
+                BuildMail(_data["fio"], function(html){
+                    //email
+                    $.post( "/bannerMailSend.php", {Data: html, Mail: _data["email"]} );
+                })
                 break;
             case 4:
                 close();
@@ -269,5 +273,223 @@ function Banner(options) {
 
     function isPageExpulsionCheck() {
         return false;
+    }
+
+    function BuildMail(name, callback){
+        let parts = [
+            {
+                link: "/mail/head.html",
+                "build": staticBuild
+            },
+            {
+                link: "/mail/description.html",
+                "build": staticBuild
+            },
+            {
+                link: "/mail/product.html",
+                "build": productsRowBuild
+            },
+            {
+                link: "/mail/description.html",
+                "build": secondDescriptionBuild
+            },
+            {
+                link: "/mail/offset.html",
+                "build": staticBuild
+            },
+            {
+                link: "/mail/boon.html",
+                "build": boonsBuild
+            },
+            {
+                link: "/mail/end.html",
+                "build": staticBuild
+            }
+        ]
+        let indexPage;
+        let boonsPage;
+
+        $.get("/index.php", function (responce) {
+            indexPage = $("<div class='root'></div>").html(responce);
+
+            $.get("/preimushchestva-kompanii", function(responce){
+                boonsPage = $("<div></div>").html(responce);
+
+                htmlBuild(parts, function (html) {
+                    html = html.replace("[Имя]",name)
+                    if (callback) callback(html);
+                    //$("#mail").html(html);
+                });
+            })
+        });
+
+        function arrayTwist(array, indexTo, indexFrom){
+            let adapter = array[indexFrom];
+            array[indexFrom] = array[indexTo];
+            array[indexTo] = adapter;
+            return array;
+        }
+
+        function htmlBuild(parts, callback) {
+            let currentStep = 0;
+            let html = "";
+
+            route();
+
+            function route() {
+                if (currentStep >= parts.length) {
+                    if (callback) callback(html);
+                    return;
+                }
+
+                execute()
+            }
+
+            function execute() {
+                $.get(parts[currentStep].link, function (responce) {
+                    parts[currentStep].build(responce, function (result) {
+                        html += result;
+                        currentStep += 1;
+                        route();
+                    })
+                })
+            }
+        }
+
+        function staticBuild(responce, callback) {
+            if (callback) callback(responce);
+        }
+
+        function productsRowBuild(responce, callback) {
+            parseSiteProducts(responce, function (products) {
+                let root = $("<div></div>")
+
+                arrayTwist(products, 0, 3);
+                arrayTwist(products, 1, 4);
+                arrayTwist(products, 2, 5);
+
+                for (let i = 0; i < products.length; i++) {
+                    root.append(products[i]);
+                }
+
+                if (callback) callback(root.html());
+            });
+
+            function parseSiteProducts(productsRowTemplate, callback) {
+                let template = $(productsRowTemplate);
+                let root = $("<div class='root'></div>");
+                let products = indexPage.find(".divnavsu");
+                let result = [];
+
+                for (let i = 0; i < products.length - 1; i += 2) {
+                    let values = {
+                        left: getParams(products.eq(i)),
+                        right: getParams(products.eq(i + 1))
+                    }
+
+                    let clone = template.clone();
+                    setProductsRowValues(values, clone);
+                    result.push(clone);
+                }
+
+                if (callback) callback(result);
+
+                function getParams(item) {
+                    let result = {
+                        title: item.find("h3").text(),
+                        image: item.find("img").attr("src"),
+                        link: item.find("a").attr("href")
+                    }
+
+                    let d = item.clone();
+                    d.find("a").remove();
+                    result["description"] = d.html();
+
+                    return result;
+                }
+            }
+
+            function setProductsRowValues(values, template) {
+                let columns = template.find(".item");
+                let left = columns.eq(0);
+                let right = columns.eq(1);
+
+                setValue(values.left, left);
+                setValue(values.right, right);
+
+                function setValue(values, item) {
+                    item.find(".title").text(values.title);
+                    item.find(".link").attr("href", values.link);
+                    item.find(".image").attr("src", values.image);
+
+                    var root = $("<div></div>");
+
+                    let priceTextIndex = values.description.indexOf("Купить от");
+                    if (priceTextIndex !== -1){
+                        let subStart = values.description.substring(0,priceTextIndex);
+                        let subEnd = values.description.substring(priceTextIndex);
+                        values.description = subStart + "<br>" + subEnd;
+                    }
+
+                    root.append($(values.description));
+                    let description = item.find(".description");
+                    root.find("p").attr("style", description.attr("style"))
+                    description.html(root.html());
+                }
+            }
+        }
+
+        function secondDescriptionBuild(responce, callback){
+            let externalHtml = indexPage.find(".pomenshe");
+            let internalHtml = $("<div></div>").html(responce);
+
+            externalHtml.find("p").attr("style", internalHtml.find("p").attr("style"));
+            let items = internalHtml.find("p");
+
+            for (let i =0; i < items.length; i++){
+                if (i === 0){
+                    items.eq(i).html(externalHtml.html());
+                }
+                else{
+                    items.eq(i).remove();
+                }
+            }
+
+            if (callback) callback(internalHtml.html());
+        }
+
+        function boonsBuild(responce, callback){
+            let template = $(responce);
+            let result = $("<div></div>");
+
+            let externalBoonsRow = boonsPage.find(".tablicapreimuschestva").find("tr");
+
+            for (var i =0; i < externalBoonsRow.length; i++){
+                let curItem = externalBoonsRow.eq(i);
+
+                let title = curItem.find("h3").text();
+
+                if (title.length == 0) continue
+
+                let description = curItem.find("td").eq(1).clone();
+                description.find("h3").remove();
+                description = description.text();
+
+                let image = curItem.find("img").attr("src");
+
+                let newTemplate = template.clone();
+                newTemplate.find(".title").text(title);
+                newTemplate.find(".description").text(description);
+                newTemplate.find(".image").attr("src", image);
+
+                if (i > 1) {
+                    newTemplate.find(".decor--bottom").remove();
+                }
+
+                result.append(newTemplate);
+            }
+
+            if (callback) callback(result.html());
+        }
     }
 }
